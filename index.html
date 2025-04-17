@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- nav -->
+      <nav class="navigation">
+        <!-- logo -->
+        <input type="checkbox" name="" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
+        <!-- input -->
+
+        <a href="#" class="logo"><span>Medi</span>verse</a>
+        <!-- menu -->
+        <ul class="menu">
+          <li>
+            <a href=""> Find a Doctor</a>
+          </li>
+          <li><a href="">Our Services</a></li>
+          <li><a href="">Testimonials</a></li>
+        </ul>
+        <a href="" class="nav-appointment-btn">Appointment</a>
+      </nav>
+
+      <!-- content -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Feel Better About Finding Healthcare</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+            vel magnam officiis similique ut quae! Laudantium quos blanditiis
+            veritatis rerum.
+          </p>
+          <div class="hero-text-btns">
+            <a href="#">
+              <i class="bi bi-search"></i>
+              Find Doctor</a
+            ><a href="#">
+              <i class="bi bi-check-lg"></i>
+              Book Appointment</a
+            >
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="./images/hero-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- search -->
+
+    <div class="appointment-search-container">
+      <h3>Find Best HealthCare</h3>
+      <div class="appointment-search">
+        <!-- search box -->
+        <div class="oppo-search-box">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search Doctor Here" />
+        </div>
+        <!-- search box -->
+        <div class="oppo-search-box">
+          <i class="bi bi-geo-alt-fill"></i>
+          <input type="text" placeholder="Set Your Location" />
+        </div>
+        <button>
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- section what we provide -->
+    <section id="what-we-provide">
+      <div class="w-info-box w-info-box1">
+        <!-- icon -->
+        <div class="w-info-icon">
+          <i class="bi bi-capsule"></i>
+        </div>
+        <div class="w-info-text">
+          <strong>Specialized Services</strong>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+      <div class="w-info-box w-info-box2">
+        <!-- icon -->
+        <div class="w-info-icon">
+          <i class="bi bi-chat-fill"></i>
+        </div>
+        <div class="w-info-text">
+          <strong>24/7 Advance Care</strong>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+      <div class="w-info-box w-info-box3">
+        <!-- icon -->
+        <div class="w-info-icon">
+          <i class="bi bi-building-fill-add"></i>
+        </div>
+        <div class="w-info-text">
+          <strong>Get Result Online</strong>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+    </section>
+    <!-- our story -->
+    <section id="our-story">
+      <div class="our-story-img">
+        <img src="./images/section-3-img.jpg" alt="" />
+        <a href="#" class="story-play-btn">
+          <i class="bi bi-play-fill"></i>
+          Play Video
+        </a>
+      </div>
+      <div class="our-story-text">
+        <h2>Short story about our clinic</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+          reprehenderit veniam velit veritatis nostrum dicta commodi explicabo
+          at quidem voluptatum vero eos excepturi eligendi, maxime, totam
+          impedit quia facilis minima.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          doloremque minus quam in totam voluptates qui cum sequi, numquam
+          molestias quis enim sapiente. Aliquam necessitatibus explicabo
+          incidunt quidem. Omnis, harum.
+        </p>
+        <div class="story-number-container">
+          <div class="story-number-box s-n-box1">
+            <strong>1000+</strong>
+            <span>Happy Patient</span>
+          </div>
+          <div class="story-number-box s-n-box2">
+            <strong>215+</strong>
+            <span>Expert Doctor's</span>
+          </div>
+          <div class="story-number-box s-n-box3">
+            <strong>100+</strong>
+            <span>Hospital Rooms</span>
+          </div>
+          <div class="story-number-box s-n-box4">
+            <strong>106+</strong>
+            <span>Award Wining</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- out servises -->
+    <section id="our-services">
+      <div class="services-heading">
+        <div class="services-heading-text">
+          <strong>Our Services</strong>
+          <h2>High Quality Services For You</h2>
+        </div>
+        <div class="services-slide-btns">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="services-box-container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- slide1 -->
+            <div class="swiper-slide">
+              <div class="services-box s-box1">
+                <i class="bi bi-bandaid-fill"></i>
+                <strong>Dental care</strong>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <!-- slide2 -->
+            <div class="swiper-slide">
+              <div class="services-box s-box2">
+                <i class="bi bi-bandaid-fill"></i>
+                <strong>Dental care</strong>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <!-- slide3 -->
+            <div class="swiper-slide">
+              <div class="services-box s-box3">
+                <i class="bi bi-bandaid-fill"></i>
+                <strong>Dental care</strong>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <!-- slide4 -->
+            <div class="swiper-slide">
+              <div class="services-box s-box4">
+                <i class="bi bi-bandaid-fill"></i>
+                <strong>Dental care</strong>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <sapn class="service-help-btn"
+        >Contact Us For Need Any Help And Services
+        <a href="#">Let's get Started</a></sapn
+      >
+    </section>
+
+    <!-- why choose us -->
+    <section id="why-choose-us">
+      <div class="why-choose-us-left">
+        <!--  -->
+        <h3>Why Choose Us?</h3>
+        <!-- container -->
+        <div class="why-choose-box-container" style="gap: 20px">
+          <div class="why-choose-box">
+            <i class="bi bi-check2"></i>
+            <div class="why-chosse-box-text">
+              <strong>Advance Care</strong>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Minima, odio?
+              </p>
+            </div>
+          </div>
+          <div class="why-choose-box">
+            <i class="bi bi-check2"></i>
+            <div class="why-chosse-box-text">
+              <strong>Advance Care</strong>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Minima, odio?
+              </p>
+            </div>
+          </div>
+          <div class="why-choose-box">
+            <i class="bi bi-check2"></i>
+            <div class="why-chosse-box-text">
+              <strong>Advance Care</strong>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Minima, odio?
+              </p>
+            </div>
+          </div>
+          <div class="why-choose-box">
+            <i class="bi bi-check2"></i>
+            <div class="why-choose-box-text">
+              <strong>Advance Care</strong>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Minima, odio?
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="why-choose-us-btn">Make an Appointment</a>
+      </div>
+      <div class="why-choose-us-right">
+        <h3>Emergency? <br />Contact Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          atque, hic debitis earum asperiores recusandae culpa officia
+          reprehenderit voluptatum officiis.
+        </p>
+        <div class="w-right-contact-box">
+          <i class="bi bi-telephone"></i>
+          <div class="w-right-contact-box-text">
+            <span>Call Us Now</span>
+            <strong>+123 456 789</strong>
+          </div>
+        </div>
+        <div class="w-right-contact-box">
+          <i class="bi bi-envelope-plus"></i>
+          <div class="w-right-contact-box-text">
+            <span>Mail US</span>
+            <strong>info@example.com</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="team-heading">
+        <h3>Meet Our Specialist</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+          enim.
+        </p>
+      </div>
+
+      <!-- container -->
+      <div class="team-box-container">
+        <!-- Swiper -->
+        <div class="swiper mySwiperteam">
+          <div class="swiper-wrapper">
+            <!-- box -->
+            <div class="swiper-slide">
+              <div class="team-box">
+                <div class="team-img">
+                  <img src="./images/hero-img.png" alt="" />
+                </div>
+                <div class="team-text">
+                  <strong>Dr Paralox Alex</strong>
+                  <span>Skin Specialist</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team-box">
+                <div class="team-img">
+                  <img src="./images/hero-img.png" alt="" />
+                </div>
+                <div class="team-text">
+                  <strong>Dr Paralox Alex</strong>
+                  <span>Skin Specialist</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team-box">
+                <div class="team-img">
+                  <img src="./images/hero-img.png" alt="" />
+                </div>
+                <div class="team-text">
+                  <strong>Dr Paralox Alex</strong>
+                  <span>Skin Specialist</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team-box">
+                <div class="team-img">
+                  <img src="./images/hero-img.png" alt="" />
+                </div>
+                <div class="team-text">
+                  <strong>Dr Paralox Alex</strong>
+                  <span>Skin Specialist</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team-box">
+                <div class="team-img">
+                  <img src="./images/hero-img.png" alt="" />
+                </div>
+                <div class="team-text">
+                  <strong>Dr Paralox Alex</strong>
+                  <span>Skin Specialist</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="team-box">
+                <div class="team-img">
+                  <img src="./images/hero-img.png" alt="" />
+                </div>
+                <div class="team-text">
+                  <strong>Dr Paralox Alex</strong>
+                  <span>Skin Specialist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="testimonials-heading">
+        <h3>Our Patients Feedback About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum
+          architecto assumenda deserunt est. Quisquam!
+        </p>
+      </div>
+      <div class="testimonials-content">
+        <div class="testimonials-img">
+          <img src="./images/feedback.png" width="100%" alt="" />
+        </div>
+        <div class="testimonials-box-container">
+          <!-- swiper -->
+          <!-- Swiper -->
+          <div class="swiper mySwipertestimonials">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <div class="t-profile">
+                    <div class="t-profile-img">
+                      <img
+                        src="./images/Clientfeeedback.avif"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="t-profile-text">
+                    <strong>Client Name</strong>
+                    <span>from China</span>
+                    <!-- rating -->
+                    <div class="t-rating">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
+                    voluptas nobis dignissimos architecto eligendi dolor
+                    blanditiis nulla porro ipsam, asperiores, accusantium
+                    consectetur ut, vitae repellendus mollitia rerum nostrum?
+                    Ut, eligendi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe -->
+    <section id="subscribe">
+      <h3>Subscribe For New Updates From MediVerse</h3>
+      <!-- Subscribe box -->
+      <form class="subscribe-box">
+        <input type="email" placeholder="Example#site.com" />
+        <button>Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!--company box  -->
+        <div class="footer-company-box">
+          <a href="#"><span>Medi</span>verse</a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            incidunt. Nostrum nam aspernatur molestias doloribus.
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Main Link's</strong>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-link-box">
+          <strong>Main Link's</strong>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-link-box">
+          <strong>Main Link's</strong>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- bootom -->
+      <div class="footer-bottom">
+        <span>Made by Muhammad Asim</span>
+        <span>Copyright 2025 - Going To Internet</span>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiperteam", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          700: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+      // commentslider
+      var swiper = new Swiper(".mySwipertestimonials", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
